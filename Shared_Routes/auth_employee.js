@@ -52,8 +52,8 @@ const { error } = await registervalidation(req.body);
 
                 service: 'Gmail',
                 auth: {
-                  user: 'shahiselvam21@gmail.com',
-                  pass: 'shahi123'
+                  user: 'email',
+                  pass: 'password'
         
                 }
 
@@ -62,7 +62,7 @@ const { error } = await registervalidation(req.body);
             const mailOptions = {
 
                 to:req.body.email,
-                from:'shahiselvam21@gmail.com',
+                from:'email',
                 subject: 'Node.js Account Activation',
                 text: 
                      'Please click on the following link, or paste this into your browser to Activate your account:\n\n' +

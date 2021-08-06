@@ -53,8 +53,8 @@ router.post("/registration" , async (req, res) => {
 
                 service: 'Gmail',
                 auth: {
-                  user: 'shahiselvam21@gmail.com',
-                  pass: 'shahi123'
+                  user: 'gmail',
+                  pass: 'password'
         
                 }
 
@@ -63,7 +63,7 @@ router.post("/registration" , async (req, res) => {
             const mailOptions = {
 
                 to:req.body.email,
-                from:'shahiselvam21@gmail.com',
+                from:'gmail',
                 subject: 'Node.js Account Activation',
                 text: 
                      'Please click on the following link, or paste this into your browser to Activate your account:\n\n' +
@@ -187,8 +187,8 @@ router.get("/activate/:token" , async (req, res) => {
         
                 service: 'Gmail',
                 auth: {
-                  user: 'shahiselvam21@gmail.com',
-                  pass: 'shahi123'
+                  user: 'gmail',
+                  pass: 'password'
         
                 }
         });
@@ -196,7 +196,7 @@ router.get("/activate/:token" , async (req, res) => {
         const mailOptions = {
         
              to:user.email,
-             from:'shahiselvam21@gmail.com',
+             from:'gmail',
              subject: 'Node.js Password Reset',
              text: 'You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n' +
                   'Please click on the following link, or paste this into your browser to complete the process:\n\n' +

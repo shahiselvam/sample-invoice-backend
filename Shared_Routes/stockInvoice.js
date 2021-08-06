@@ -35,8 +35,8 @@ router.post("/Invoice" , async (req , res) => {
 
           service: 'Gmail',
           auth: {
-            user: 'shahiselvam21@gmail.com',
-            pass: 'shahi123'
+            user: 'gmail',
+            pass: 'password'
   
           }
 
@@ -45,7 +45,7 @@ router.post("/Invoice" , async (req , res) => {
       const mailOptions = {
 
           to:req.user.email,
-          from:'shahiselvam21@gmail.com',
+          from:'gmail',
           subject: 'Sales Invoice',
           text: 
                'One New Invoice Created' 
@@ -59,7 +59,7 @@ router.post("/Invoice" , async (req , res) => {
            const mailOptions1 = {
 
             to:req.body.CustomerEmail,
-            from:'shahiselvam21@gmail.com',
+            from:'gmail',
             subject: 'Sales Invoice',
             text: 
                  'Thank You for your Purchase' 
