@@ -32,7 +32,7 @@ app.use(function(req, res, next) {
 app.use(cors({
     origin: [
     
-    'http://localhost:3000'
+    'https://infallible-hodgkin-1c6bb3.netlify.app'
     
   ],
   credentials: true}));
@@ -60,7 +60,7 @@ try{
    
 }
 catch(err){
-    res.redirect('http://localhost:3000/login')
+    res.redirect('https://infallible-hodgkin-1c6bb3.netlify.app/login')
     res.json({error: err} )
 }
 }
