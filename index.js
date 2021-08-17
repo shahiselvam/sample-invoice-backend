@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
 app.use(cors({
     origin: [
     
-    'https://611b695616baaaf7993dff79--infallible-hodgkin-1c6bb3.netlify.app'
+    'https://infallible-hodgkin-1c6bb3.netlify.app'
     
   ],
   credentials: true}));
