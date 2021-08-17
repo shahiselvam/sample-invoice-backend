@@ -30,12 +30,13 @@ app.use(function(req, res, next) {
     next()
   })
 app.use(cors({
+     credentials: true,
     origin: [
     
     'https://infallible-hodgkin-1c6bb3.netlify.app'
     
-  ],
-  credentials: true}));
+  ]
+ }));
 app.use(express.json());
 app.use(cookieParser());
 
